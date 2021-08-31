@@ -69,8 +69,6 @@ class Personne
 	{
 		nom = nm;
 		fonction = fn;
-		v.setCouleur("jaune");
-		v.setMarque("Laguna");
 		voiture.setCouleur(v.getCouleur());
 		voiture.setMarque(v.getMarque());
 	}
@@ -97,14 +95,15 @@ class Personne
 int main(int argc, char const *argv[])
 {
 	Voiture v1;
-	v1.details();
+	// v1.details();
+	
 	Voiture v2("Noir", "Ferrari");
-	v2.details();
+	// v2.details();
 
-	Voiture v3("Vert", "Hummer v8");
-	v3.details();
+	Voiture v3("vert", "Hummer V8");
+	// v3.details();
 
-	Personne p1("Koto", "Directeur", v2);
+	Personne p1("Koto", "Directeur", v3);
 	p1.details();
 	return 0;
 }
